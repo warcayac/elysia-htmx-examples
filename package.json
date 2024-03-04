@@ -1,0 +1,21 @@
+{
+  "name": "elysia_htmx_examples",
+  "version": "1.0.50",
+  "module": "src/index.tsx",
+  "dependencies": {
+    "@elysiajs/cors": "^0.8.0",
+    "@elysiajs/html": "^0.8.0",
+    "@elysiajs/static": "^0.8.1",
+    "ansis": "^2.3.0",
+    "elysia": "latest",
+    "nanoid": "^5.0.6"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test bun test ./test/**.test.tsx",
+    "dev": "NODE_ENV=development bun --env-file=.env run --watch src/index.tsx",
+    "start": "NODE_ENV=production bun --env-file=.env run src/index.tsx"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.0.7"
+  }
+}
