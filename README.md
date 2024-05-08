@@ -35,4 +35,5 @@ The `hx-trigger` attribute in HTMX supports various modifiers to customize event
 ---
 
 Update #1: **03-March-2024** by **William AC**
+
 Update #2: **08-May-2024** by **William AC**
