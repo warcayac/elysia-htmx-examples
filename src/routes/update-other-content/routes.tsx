@@ -45,12 +45,11 @@ export const updateothercontentRoutes = new Elysia()
   .post(
     path(5), 
     ({body:{name,email}, set, html}) => {
-      // hx-swap-oob="beforeend:#contacts-table"
-      // attributes={{'hx-swap-oob':"beforeend:#contacts-table"}}
-      // attributes={{'hx-swap-oob':"outerhtml:#swap-row"}}
-      // attributes={{'hx-swap-oob':"beforebegin:#swaprow"}}
       set['status'] = 201;
-      return html(<><Row user={{name,email}} attributes={{'hx-swap-oob':"beforebegin:#swaprow"}}/></>);
+      // Es necesario encerrar el componente Row con el elemento TBODY, para que la fila
+      // se agregue a la tabla como tal, caso contrario el elemento TR es eliminado. 
+      // Véase: https://github.com/bigskysoftware/htmx/issues/2364
+      return html(<tbody hx-swap-oob="beforebegin:#swaprow"><Row user={{name,email}}/></tbody>);
     },
     checkBody,
   )

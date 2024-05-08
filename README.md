@@ -29,9 +29,10 @@ The `hx-trigger` attribute in HTMX supports various modifiers to customize event
 ---
 ## TO-DO
 
-- Solution 2 for **Updating Other Content** presents an unexpected behavior, it needs to be fixed
+- ~~Solution 2 for **Updating Other Content** presents an unexpected behavior, it needs to be fixed~~
 - **Async Authentication** needs a better example about how it should work
 
 ---
 
-Updated: **03-March-2024** by **William AC**
+Update #1: **03-March-2024** by **William AC**
+Update #2: **08-May-2024** by **William AC**
